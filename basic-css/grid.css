@@ -1,0 +1,39 @@
+/* .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+} */
+
+/* .grid {
+    display: grid;
+    grid-template-columns: 2fr repeat(4, 1fr);
+    gap: 1rem;
+} */
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1rem 2rem;
+    /* row-gap: 1rem;
+    column-gap: 2rem; */
+}
+
+.grid article {
+    background-color: red;
+    min-height: 5rem;
+}
+
+/* .grid article:nth-child(1) {
+    background-color: brown;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+} */
+
+.grid article:nth-child(1) {
+    background-color: brown;
+    grid-row: span 3;
+    grid-column: span 3;
+}

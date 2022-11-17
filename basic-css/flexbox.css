@@ -1,0 +1,32 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-flow: row wrap;
+    /* flex-flow: flex-direction flex-wrap; */
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    height: 500px;
+}
+
+.flex-item {
+    flex: 1 1 200px;
+    /* flex: flex-grow flex-shrink flex-basis; */
+    /* flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 400px; */
+    background-color: red;
+}
+
+.flex-item:nth-child(2) {
+    align-self: flex-start;
+}
+
+.flex-item:nth-child(3) {
+    align-self: stretch;
+}
+
+.flex-item:nth-child(4) {
+    align-self: flex-end;
+}
