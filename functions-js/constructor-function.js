@@ -5,7 +5,7 @@ function Person(name, surname, age, height, weight) {
         return weight / (height ** 2);
     };
 
-    //all below will private 
+    //all below will public 
     this.name = name;
     this.surname = surname;
     this.age = age;
